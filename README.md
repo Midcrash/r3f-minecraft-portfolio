@@ -64,7 +64,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://imgur.com/rgunng6)
+![product-screenshot](images\Capture.PNG)
 
 I was inspired to make this portfolio website after taking the THREE.JS course from Bruno Simon. I wanted to create something meaningful to me whilst testing my limits on what I learned throughout that course. I also wanted to implemenet the usage of React because I have been using that framework for a while now. Hopefully this showcases some of my skills and to land a job or apprenticeship!
 
@@ -122,11 +122,11 @@ From here, you should be able to go to `localhost:3000` and see the forked repo.
 
 After clicking the, "Start Portfolio" button. You will see this page.
 
-[![Usage SS 1][usage-screenshot]](https://imgur.com/SiNekD9)
+![usage-screenshot](images\Capture2.PNG)
 
 Hover over an island to open the modal windows!
 
-[![Usage SS 2][usage-screenshot2]](https://imgur.com/SiNekD9)
+![usage-screenshot2](images\Capture3.PNG)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -179,6 +179,7 @@ Project Link: [https://github.com/Midcrash/r3f-minecraft-portfolio](https://gith
 [license-url]: https://github.com/Midcrash/r3f-minecraft-portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/tyrae-yao-08b684154
-[product-screenshot]: images\Capture.PNG
+
+<!-- [product-screenshot]: images\Capture.PNG
 [usage-screenshot]: images\Capture2.PNG
-[usage-screenshot2]: images\Capture3.PNG
+[usage-screenshot2]: images\Capture3.PNG -->
