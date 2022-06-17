@@ -56,10 +56,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -126,11 +123,11 @@ From here, you should be able to go to `localhost:3000` and see the forked repo.
 
 After clicking the, "Start Portfolio" button. You will see this page.
 
-[![Product Name Screen Shot][usage-screenshot]](https://imgur.com/SiNekD9)
+[![Usage SS 1][usage-screenshot]](https://imgur.com/SiNekD9)
 
 Hover over an island to open the modal windows!
 
-[![Product Name Screen Shot][usage-screenshot2]](https://imgur.com/SiNekD9)
+[![Usage SS 2][usage-screenshot2]](https://imgur.com/SiNekD9)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -183,6 +180,6 @@ Project Link: [https://github.com/Midcrash/r3f-minecraft-portfolio](https://gith
 [license-url]: https://github.com/Midcrash/r3f-minecraft-portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/tyrae-yao-08b684154
-[product-screenshot]: (https://imgur.com/rgunng6)
-[usage-screenshot]: (https://imgur.com/SiNekD9)
-[usage-screenshot2]: (https://imgur.com/bMrcTm0)
+[product-screenshot]: (images\Capture.PNG)
+[usage-screenshot]: (images\Capture2.PNG)
+[usage-screenshot2]: (images\Capture3.PNG)
