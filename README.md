@@ -27,7 +27,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Midcrash/r3f-minecraft-portfolio">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
 <h3 align="center">Portfolio by Tyrae Yao</h3>
@@ -69,7 +69,6 @@
 I was inspired to make this portfolio website after taking the THREE.JS course from Bruno Simon. I wanted to create something meaningful to me whilst testing my limits on what I learned throughout that course. I also wanted to implemenet the usage of React because I have been using that framework for a while now. Hopefully this showcases some of my skills and to land a job or apprenticeship!
 
 This portfolio project is still underdevelopment and I hope to gain some inspiration to finish it soon!
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -180,6 +179,6 @@ Project Link: [https://github.com/Midcrash/r3f-minecraft-portfolio](https://gith
 [license-url]: https://github.com/Midcrash/r3f-minecraft-portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/tyrae-yao-08b684154
-[product-screenshot]: (images\Capture.PNG)
-[usage-screenshot]: (images\Capture2.PNG)
-[usage-screenshot2]: (images\Capture3.PNG)
+[product-screenshot]: images\Capture.PNG
+[usage-screenshot]: images\Capture2.PNG
+[usage-screenshot2]: images\Capture3.PNG
