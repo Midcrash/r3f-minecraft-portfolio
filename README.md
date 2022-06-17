@@ -1,70 +1,188 @@
-# Getting Started with Create React App
+<div id="top"></div>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Midcrash/r3f-minecraft-portfolio">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">Portfolio by Tyrae Yao</h3>
+
+  <p align="center">
+    My portfolio made with React Three Fiber.
+  </p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://imgur.com/rgunng6)
+
+I was inspired to make this portfolio website after taking the THREE.JS course from Bruno Simon. I wanted to create something meaningful to me whilst testing my limits on what I learned throughout that course. I also wanted to implemenet the usage of React because I have been using that framework for a while now. Hopefully this showcases some of my skills and to land a job or apprenticeship!
+
+This portfolio project is still underdevelopment and I hope to gain some inspiration to finish it soon!
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-In the project directory, you can run:
+### Built With
 
-### `npm start`
+- [React.js](https://reactjs.org/)
+- [React Three Fiber](https://github.com/pmndrs/react-three-fiber)
+- [React Drei](https://github.com/pmndrs/drei)
+- [React Router](https://reactrouter.com/docs/en/v6/getting-started/overview)
+- [Blender](https://www.blender.org/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- GETTING STARTED -->
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is an example of how to list things you need to use the software and how to install them.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Midcrash/r3f-minecraft-portfolio
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start your environment
+   ```sh
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+From here, you should be able to go to `localhost:3000` and see the forked repo.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- USAGE EXAMPLES -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+After clicking the, "Start Portfolio" button. You will see this page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[![Product Name Screen Shot][usage-screenshot]](https://imgur.com/SiNekD9)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Hover over an island to open the modal windows!
 
-### Code Splitting
+[![Product Name Screen Shot][usage-screenshot2]](https://imgur.com/SiNekD9)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
+<!-- ROADMAP -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Roadmap
 
-### Making a Progressive Web App
+- [ ] Landing Page
+  - [x] Create buttons w/ routes
+  - [x] Play sounds when button clicked
+  - [x] Design the page like MC home page
+  - [ ] Add routes to all buttons
+- [ ] Portfolio Page
+  - [x] Create minecraft world in Blender
+  - [x] Import .glb file to React Three
+  - [x] Create the canvas for Three.JS
+    - [x] Rotate camera on pivot point
+    - [x] Display text on Island hover
+      - [x] Text follow camera
+    - [x] Display modal window on Island click
+    - [ ] Finish up designing modal windows and information
+- [ ] Contact Me
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+See the [open issues](https://github.com/Midcrash/Midcrash/r3f-minecraft-portfolio/issues) for a full list of proposed features (and known issues).
 
-### Advanced Configuration
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- CONTACT -->
 
-### Deployment
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Tyrae Yao - [@Tyao25567946](https://twitter.com/Tyao25567946) - yaotyrae@gmail.com
 
-### `npm run build` fails to minify
+Project Link: [https://github.com/Midcrash/r3f-minecraft-portfolio](https://github.com/Midcrash/r3f-minecraft-portfolio)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/Midcrash/r3f-minecraft-portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/Midcrash/r3f-minecraft-portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Midcrash/r3f-minecraft-portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/Midcrash/r3f-minecraft-portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/Midcrash/r3f-minecraft-portfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/Midcrash/r3f-minecraft-portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Midcrash/r3f-minecraft-portfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/Midcrash/r3f-minecraft-portfolio/issues
+[license-shield]: https://img.shields.io/github/license/Midcrash/r3f-minecraft-portfolio.svg?style=for-the-badge
+[license-url]: https://github.com/Midcrash/r3f-minecraft-portfolio/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/tyrae-yao-08b684154
+[product-screenshot]: (https://imgur.com/rgunng6)
+[usage-screenshot]: (https://imgur.com/SiNekD9)
+[usage-screenshot2]: (https://imgur.com/bMrcTm0)
