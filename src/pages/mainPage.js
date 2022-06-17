@@ -36,6 +36,7 @@ const MainPage = () => {
           </p>
         </div>
         <div className="footer-text-right">
+          <p className="footer-text">Still in Development</p>
           <p className="footer-text">Made by Tyrae Yao :)</p>
         </div>
       </div>

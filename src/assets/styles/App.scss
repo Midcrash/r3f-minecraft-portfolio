@@ -46,7 +46,7 @@ $assetPath: "../imgs/bg.png";
 .bg {
   @include blur();
   background-image: url(https://i.ibb.co/bH3JY30/IE1G7Lr.png);
-  background-size: cover;
+  background-size: 110% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
   // opacity: 0.75;
@@ -172,5 +172,8 @@ $assetPath: "../imgs/bg.png";
     margin-left: 6px;
     margin-right: 6px;
     @include no-select();
+  }
+  .footer-text-right {
+    text-align: right;
   }
 }
