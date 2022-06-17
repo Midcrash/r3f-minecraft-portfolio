@@ -14,6 +14,7 @@ import {
 } from "@react-three/drei";
 import { useSpring, config } from "react-spring";
 import Modal from "../components/modal";
+import ModalProjects from "../components/modalProjects";
 
 softShadows();
 
@@ -47,6 +48,7 @@ const ZoomWithOrbital = () => {
 const Portfolio = () => {
   const [hover, setHover] = useState(false);
   const [open, setOpen] = useState(false);
+  const [open1, setOpen1] = useState(false);
 
   return (
     <>
@@ -60,7 +62,12 @@ const Portfolio = () => {
       >
         <Lights />
         <Suspense fallback={null}>
-          <Model hover={hover} setHover={setHover} setOpen={setOpen} />
+          <Model
+            hover={hover}
+            setHover={setHover}
+            setOpen={setOpen}
+            setOpen1={setOpen1}
+          />
           {/* <Floor /> */}
           <ZoomWithOrbital />
         </Suspense>
@@ -85,6 +92,7 @@ const Portfolio = () => {
       </Canvas>
       <Loader />
       <Modal open={open} setOpen={setOpen} />
+      <ModalProjects open1={open1} setOpen1={setOpen1} />
     </>
   );
 };

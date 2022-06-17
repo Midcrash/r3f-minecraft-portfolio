@@ -52,6 +52,7 @@ const World = (props) => {
           hoverIslandEnter={hoverIslandEnter}
           hoverIslandExit={hoverIslandExit}
           fontProps={fontProps}
+          setOpen1={props.setOpen1}
         />
       </group>
     </>
