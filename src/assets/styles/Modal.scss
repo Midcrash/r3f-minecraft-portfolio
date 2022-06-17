@@ -70,6 +70,8 @@
     position: absolute;
   }
   .modal {
+    background: #999 url("https://i.ibb.co/rb2TWXL/bgbtn.png");
+    image-rendering: pixelated;
     position: absolute;
     animation: modal 0.4s linear normal forwards;
     color: white;
@@ -80,8 +82,26 @@
     align-items: center;
     margin: 8px;
     position: absolute;
-    box-shadow: inset -4px -4px rgba(32, 32, 32, 0.333),
-      inset 4px 4px rgba(32, 32, 32, 0.333);
+    box-shadow: inset 0.1em 0.1em #fff7, inset -0.15em -0.15em #0006;
+    .project-container {
+      width: 100%;
+      height: 50%;
+      .project-items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        .project-item {
+          background: black;
+          width: 100%;
+          height: 100%;
+          margin: 1%;
+          text-align: center;
+        }
+      }
+    }
   }
   .modal-left {
     background-color: rgb(0, 0, 0);

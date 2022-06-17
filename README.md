@@ -148,6 +148,7 @@ Hover over an island to open the modal windows!
       - [x] Text follow camera
     - [x] Display modal window on Island click
     - [ ] Finish up designing modal windows and information
+      - [ ] Add projects to projects modal
 - [ ] Contact Me
 
 See the [open issues](https://github.com/Midcrash/Midcrash/r3f-minecraft-portfolio/issues) for a full list of proposed features (and known issues).

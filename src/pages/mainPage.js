@@ -13,8 +13,8 @@ const btnData = [
     path: "link here",
   },
   {
-    text: "???",
-    path: "/",
+    text: "GitHub",
+    path: "https://github.com/Midcrash/r3f-minecraft-portfolio",
   },
 ];
 

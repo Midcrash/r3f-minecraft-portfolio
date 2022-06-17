@@ -9,6 +9,7 @@ const MainButton = (props) => {
     btnAudio.currentTime = 0;
     btnAudio.play();
   };
+
   return (
     <div className="main-text-container">
       {props.btnData.map((data) => (
@@ -17,9 +18,20 @@ const MainButton = (props) => {
           key={data.text}
           onClickCapture={() => playSound()}
         >
-          <Link className="title-text" to={data.path}>
-            {data.text}
-          </Link>
+          {data.text !== "GitHub" ? (
+            <Link className="title-text" to={data.path}>
+              {data.text}
+            </Link>
+          ) : (
+            <a
+              className="title-text"
+              href="https://github.com/Midcrash/r3f-minecraft-portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {data.text}
+            </a>
+          )}
         </div>
       ))}
     </div>
