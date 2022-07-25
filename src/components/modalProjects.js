@@ -27,7 +27,7 @@ const ModalProjects = (props) => {
                     <p className="item-title">Inventory Hero</p>
                     <p className="item-desc">
                       Full Stack Application - AWS Relational Database, PHP,
-                      Bootstrap{" "}
+                      Bootstrap, REST Api{" "}
                     </p>
                   </div>
                 </a>
@@ -56,7 +56,7 @@ const ModalProjects = (props) => {
                     <p className="item-title">Square Dashboard (WIP)</p>
                     <p className="item-desc">
                       Full Stack Application - Next.Js, React, Firebase, Square
-                      API, TailwindCSS
+                      API, TailwindCSS, REST Apis
                     </p>
                   </div>
                 </a>
