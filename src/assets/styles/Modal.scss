@@ -90,15 +90,38 @@
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: space-around;
         align-items: center;
-        cursor: pointer;
+        .item-container {
+          display: flex;
+          width: 100%;
+          height: 100%;
+        }
         .project-item {
-          background: black;
+          box-shadow: inset -2px -4px #0004, inset 2px 2px #fff5;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: rgba(155, 155, 155, 0.333);
           width: 100%;
           height: 100%;
           margin: 1%;
-          text-align: center;
+          text-decoration: none;
+          color: white;
+          text-align: -webkit-center;
+          .item-title {
+            text-align: center;
+            font-size: larger;
+          }
+          .item-desc {
+            font-size: medium;
+            text-align: center;
+            width: 75%;
+          }
+          .item-logo {
+            height: 150px;
+            width: 150px;
+          }
         }
       }
     }
