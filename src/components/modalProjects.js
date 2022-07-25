@@ -39,24 +39,24 @@ const ModalProjects = (props) => {
                 >
                   <img alt="MClogo" src={MCLogo} className="item-logo" />
                   <div>
-                    <p className="item-title">Square Dashboard</p>
+                    <p className="item-title">Minecraft Portfolio</p>
                     <p className="item-desc">
-                      Full Stack Application - Next.Js, React, Firebase, Square
-                      API, TailwindCSS
+                      Front End Application - React, R3F, Drei, React Router
                     </p>
                   </div>
                 </a>
                 <a
                   className="project-item"
-                  href="https://github.com/Midcrash/r3f-minecraft-portfolio"
+                  href="https://github.com/Midcrash/next-square-dashboard"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img alt="MClogo" src={MCLogo} className="item-logo" />
                   <div>
-                    <p className="item-title">Minecraft Portfolio</p>
+                    <p className="item-title">Square Dashboard (WIP)</p>
                     <p className="item-desc">
-                      Front End Application - React, R3F, Drei, React Router
+                      Full Stack Application - Next.Js, React, Firebase, Square
+                      API, TailwindCSS
                     </p>
                   </div>
                 </a>
