@@ -121,7 +121,7 @@ $assetPath: "../imgs/bg.png";
     }
   }
   .main-text-container {
-    width: 25%;
+    width: 40%;
     height: 5%;
     margin-bottom: 15%;
 
@@ -175,5 +175,12 @@ $assetPath: "../imgs/bg.png";
   }
   .footer-text-right {
     text-align: right;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Your styles for smartphone-sized screens here */
+  .main-text-container {
+    min-width: 350px;
   }
 }

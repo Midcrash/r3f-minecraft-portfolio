@@ -7,7 +7,7 @@ import Floor from "../components/three/floor";
 import {
   OrbitControls,
   Stars,
-  softShadows,
+  SoftShadows,
   Sky,
   Loader,
   Float,
@@ -15,8 +15,6 @@ import {
 import { useSpring, config } from "react-spring";
 import Modal from "../components/modal";
 import ModalProjects from "../components/modalProjects";
-
-softShadows();
 
 const ZoomWithOrbital = () => {
   const { gl, camera } = useThree();
@@ -60,6 +58,7 @@ const Portfolio = () => {
           // canvas.gl.physicallyCorrectLights = true;
         }}
       >
+        <SoftShadows />
         <Lights />
         <Suspense fallback={null}>
           <Model
