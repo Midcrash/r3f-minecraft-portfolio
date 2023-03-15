@@ -47,6 +47,7 @@ const Portfolio = () => {
   const [hover, setHover] = useState(false);
   const [open, setOpen] = useState(false);
   const [open1, setOpen1] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <>
@@ -91,7 +92,12 @@ const Portfolio = () => {
       </Canvas>
       <Loader />
       <Modal open={open} setOpen={setOpen} />
-      <ModalProjects open1={open1} setOpen1={setOpen1} />
+      <ModalProjects
+        open1={open1}
+        setOpen1={setOpen1}
+        setIsActive={setIsActive}
+        isActive={open1}
+      />
     </>
   );
 };
