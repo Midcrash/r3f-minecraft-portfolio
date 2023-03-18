@@ -30,7 +30,7 @@ const MainPage = () => {
       </div>
       <div className="footer-container">
         <div className="footer-text-container">
-          <p className="footer-text">Portfolio Beta 0.2</p>
+          <p className="footer-text">Portfolio Beta 0.3</p>
           <p className="footer-text">
             Powered by Love, Passion, and Motivation
           </p>

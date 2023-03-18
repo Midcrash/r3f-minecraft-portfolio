@@ -46,7 +46,6 @@ const World = (props) => {
           hoverIslandExit={hoverIslandExit}
           fontProps={fontProps}
           setOpen={props.setOpen}
-          hovered={hovered}
         />
         <ProjectIsland
           hoverIslandEnter={hoverIslandEnter}

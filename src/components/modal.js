@@ -1,68 +1,134 @@
-import React, { Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/styles/Modal.scss";
-import img from "../assets/imgs/github.png";
-import { Canvas } from "@react-three/fiber";
-import Character from "./three/StaticCharacter";
-import Lights from "./three/lights";
-import { OrbitControls } from "@react-three/drei";
+import { motion, AnimatePresence } from "framer-motion";
+
+const variants = {
+  visible: {
+    y: 0,
+    transition: { duration: 0.5, ease: "easeInOut", staggerChildren: 0.05 },
+  },
+  hidden: {
+    y: 200,
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
+  exit: {
+    y: 200,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+      staggerChildren: 0.05,
+    },
+  },
+};
+
+const itemVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.1 } },
+  hidden: { opacity: 0, y: -50 },
+  exit: { opacity: 0, y: -50 },
+};
+
+const myComponentStyle = {
+  color: "white",
+  backgroundColor: "transparent",
+};
 
 const Modal = (props) => {
-  if (!props.open) {
-    return null;
-  } else {
-    return (
-      <div className="modal-container">
-        <div
-          className="modal-background"
-          onClick={() => props.setOpen(false)}
-        ></div>
-        <div className="modal">
-          <div className="modal-left">
-            <h2 className="header">Hi, I'm Tyrae</h2>
-            <br />
-            <p>
-              I'm a fullstack developer with a serious passion in creative
-              design and logical thinking. I want to create interactive UX and
-              cool UI effects/animations. Whilst connecting everything with a
-              proper backend!
-            </p>
-            <br />
-            <p>
-              Highly motivated individual, problem solver, and always a student.
-              Reading daily articles, biking outside, and learning new things
-              are some of my hobbies.
-            </p>
-            <br />
-            <p>
-              Interested in frontend and backend development and wanting to work
-              on significant projects in my future!
-            </p>
-          </div>
-          <div className="modal-right">
-            <Canvas
-              camera={{
-                position: [0, 2, 5],
-                fov: 30,
-                near: 1,
-              }}
-              style={{ height: "100%" }}
-            >
-              <Suspense fallback={null}>
-                <Character />
-                <Lights />
-                <OrbitControls
-                  target={[0, 1, 0]}
-                  enablePan={false}
-                  enableRotate={false}
-                  enableZoom={false}
-                />
-              </Suspense>
-            </Canvas>
-          </div>
-        </div>
-      </div>
-    );
+  const [numItems, setNumItems] = useState(getInitialNumItems);
+
+  function getInitialNumItems() {
+    const width = window.innerWidth;
+    if (width <= 768) {
+      return 25;
+    } else if (width > 1200) {
+      return 15;
+    } else {
+      return 9;
+    }
   }
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width <= 768) {
+        setNumItems(25);
+      } else if (width >= 1200) {
+        setNumItems(15);
+      } else {
+        setNumItems(9);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  return (
+    <AnimatePresence>
+      {props.isActive && (
+        <div className="modal-container">
+          <motion.div
+            className="svg center"
+            width="75%"
+            height="75%"
+            viewBox="0 0 75% 75%"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={variants}
+          >
+            <ul>
+              {[...Array(numItems)].map((_, index) => (
+                <motion.li
+                  key={index}
+                  className="box"
+                  variants={itemVariants}
+                ></motion.li>
+              ))}
+            </ul>
+          </motion.div>
+          <motion.div
+            className="modal-background center"
+            key="modal-background"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.35, delay: 1 } }}
+            onClick={() => {
+              props.setOpen(false);
+              props.setIsActive(false);
+            }}
+          ></motion.div>
+          <motion.div
+            className="modal center"
+            key="modal"
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              scale: 1,
+
+              transition: { duration: 1, delay: 1 },
+            }}
+            exit={{ opacity: 0, transition: { duration: 0.35 } }}
+            style={myComponentStyle}
+          >
+            <div className="about-container">
+              <h2 className="about-header">Hi, I'm Tyrae</h2>
+              <p>I am a Full Stack Developer with a few years of experience!</p>
+              <div className="about-left">
+                <p>Frontend Skills</p>
+                <p>HTML, CSS, JavaScript, React</p>
+              </div>
+              <div className="about-right">
+                <p>Backend Skills</p>
+                <p>Firebase, SQL, PHP, ExpressJS</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      )}
+    </AnimatePresence>
+  );
 };
 
 export default Modal;

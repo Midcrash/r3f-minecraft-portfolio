@@ -91,7 +91,12 @@ const Portfolio = () => {
         />
       </Canvas>
       <Loader />
-      <Modal open={open} setOpen={setOpen} />
+      <Modal
+        open={open}
+        setOpen={setOpen}
+        setIsActive={setIsActive}
+        isActive={open}
+      />
       <ModalProjects
         open1={open1}
         setOpen1={setOpen1}
